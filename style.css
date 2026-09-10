@@ -1,0 +1,1652 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.homepagina {
+    display: grid;
+    grid-template-columns: 17vw 83vw; 
+    grid-template-rows: 15vh 7vh 25vh 10vh 40vh 30vh 30vh auto 15vh;
+}
+
+h1 {
+color: rgb(35, 28, 145);
+font-size: 2.5rem;
+} 
+
+h2 {
+color: black;
+font-size: 1.5rem;   
+
+margin-left: 10px;
+}
+
+h3 {
+  color:rgb(19, 69, 12);
+  font-size: 1.2rem;
+}
+
+#header2{
+color: rgb(19, 69, 12);
+}
+
+p {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+#denijntjeclub {
+    background-color: rgb(255, 218, 56); 
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    text-align: center;
+
+    background-image: url(images/nijntjeheader.png);
+    max-width:100%;
+    height:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#tussenruimte {
+  background-color: rgb(255, 255, 255);
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+#menu {
+    background-color: orange; 
+    grid-column: 1 / 2; 
+    grid-row: 3 / 4; 
+
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a:link {
+  color: rgb(35, 28, 145);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(171, 19, 24);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(240, 210, 62); 
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(19, 69, 12);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a.links {
+  background-color: white;
+}
+
+#watisdenijntjeclub {
+    background-color: rgb(255, 255, 255); 
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}   
+
+#tussenruimte2 {
+  background-color: rgb(255, 255, 255);
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+#dekarakters {
+    background-color: green;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+
+    border-bottom: 3px solid black;
+}   
+
+#deboekjes {
+    background-color: blue; 
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+
+    border-bottom: 3px solid black;
+}   
+
+#dickbruna {
+    background-color: purple; 
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+
+    border-bottom: 3px solid black;
+}   
+
+#hetnijntjemuseum {
+    background-color: pink; 
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+
+    border-bottom: 3px solid black;
+}   
+
+#banner {
+background-color: rgb(58, 112, 28);
+grid-column: 1 / 3;
+grid-row: 9 / 10;
+
+text-align: center;
+
+background-image: url("images/trein.jpg");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .homepagina {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+#denijntjeclub {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px;
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tussenruimte {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menu {
+  grid-column: 1;
+  grid-row: 3;
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#menu h3 {
+width: 100%;
+text-align: center;
+}
+
+#watisdenijntjeclub {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2 {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#dekarakters {
+  grid-column: 1;
+  grid-row: 6;
+  padding: 10px;
+}
+
+#deboekjes {
+  grid-column: 1;
+  grid-row: 7;
+  padding: 10px;
+}
+
+#dickbruna {
+  grid-column: 1;
+  grid-row: 8;
+  padding: 10px;
+}
+
+#hetnijntjemuseum {
+  grid-column: 1;
+  grid-row: 9;
+  padding: 10px;
+}
+
+#banner {
+  grid-column: 1;
+  grid-row: 10;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+}
+}
+
+@media (max-width: 600px) {
+.homepagina {
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  }
+
+#denijntjeclub {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px; 
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-image: none;
+}
+
+#tussenruimte {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menu {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+
+padding: 15px;
+flex-direction: row;
+flex-wrap: wrap;
+
+gap: 10px;
+}
+
+#menu h3 {
+width: 100%;
+text-align: center;
+}
+
+#watisdenijntjeclub {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2 {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#dekarakters {
+  grid-column: 1;
+  grid-row: 6;
+  padding: 10px;
+}
+
+#deboekjes {
+  grid-column: 1;
+  grid-row: 7;
+  padding: 10px;
+}
+
+#dickbruna {
+  grid-column: 1;
+  grid-row: 8;
+  padding: 10px;
+}
+
+#hetnijntjemuseum {
+  grid-column: 1;
+  grid-row: 9;
+  padding: 10px;
+}
+
+#banner {
+  grid-column: 1;
+  grid-row: 10;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+
+   background-image: none;
+}
+}
+
+.productenpagina {
+    display: grid;
+    grid-template-columns: 17vw 3vw 30vw 20vw 30vw;
+    grid-template-rows: 15vh 7vh 25vh 10vh 30vh 30vh 30vh 15vh;
+}
+
+.producttitel {
+  color:white;
+  font-size: 1.2rem;
+
+  margin-left: 10px;
+}
+
+.producttekst p {
+  color: white;
+}
+
+#denijntjeclubp {
+  background-color: rgb(255, 218, 56); 
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+
+    text-align: center;
+
+    background-image: url(images/nijntjeheader.png);
+    max-width:100%;
+    height:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#menup {
+  background-color: orange;
+  grid-column: 1 / 2; 
+  grid-row: 3 / 4;
+
+  margin-right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#producten {
+    background-color: rgb(255, 255, 255); 
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+} 
+
+.productafbeeldingen img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+
+  border-bottom: 2px solid black;
+}
+
+#afbeeldingproduct1 {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+
+  border-top: 2px solid black;
+}
+
+
+#product1 {
+  background-color: rgb(35, 28, 145);
+  grid-column: 3 / 4;
+  grid-row: 5 / 6; 
+}
+
+#afbeeldingproduct2 {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+
+  border-top: 2px solid black;
+}
+
+#product2 {
+  background-color: rgb(35, 28, 145);
+  grid-column: 5 / 6;
+  grid-row: 5 / 6; 
+}
+
+#afbeeldingproduct3 {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
+
+
+#product3 {
+  background-color: rgb(255, 218, 56);
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+
+#afbeeldingproduct4 {
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+}
+
+#product4 {
+  background-color: rgb(255, 218, 56);
+  grid-column: 5 / 6;
+  grid-row: 6 / 7; 
+}
+
+#afbeeldingproduct5 {
+  grid-column: 1 / 3;
+  grid-row: 7 / 8;
+}
+
+#product5 {
+  background-color: rgb(171, 19, 24);
+  grid-column: 3 / 4;
+  grid-row: 7 / 8; 
+}
+
+#afbeeldingproduct6 {
+  grid-column: 4 / 5;
+  grid-row: 7 / 8;
+}
+
+#product6 {
+  background-color: rgb(171, 19, 24);;
+  grid-column: 5 / 6;
+  grid-row: 7 / 8;
+}
+
+#bannerp {
+background-color: rgb(58, 112, 28);
+grid-column: 1 / 6;
+grid-row: 8 / 9;
+
+text-align: center;
+
+background-image: url("images/trein.jpg");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+@media (max-width: 1100px) {
+.productenpagina {
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  }
+
+#denijntjeclubp {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px; 
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tussenruimte {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menup {
+  grid-column: 1;
+  grid-row: 3;
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#menup h3 {
+width: 100%;
+text-align: center;
+}
+
+#producten {
+  grid-column: 1;
+  grid-row: 4;
+
+  padding: 20px;
+}
+
+#tussenruimte2 {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#afbeeldingproduct1 {
+  grid-column: 1;
+  grid-row: 6;
+}
+#product1 {
+  grid-column: 1;
+  grid-row: 7;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct2 {
+  grid-column: 1;
+  grid-row: 8;
+}
+#product2 {
+  grid-column: 1;
+  grid-row: 9;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct3 {
+  grid-column: 1;
+  grid-row: 10;
+}
+#product3 {
+  grid-column: 1;
+  grid-row: 11;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct4 {
+  grid-column: 1;
+  grid-row: 12;
+}
+#product4 {
+  grid-column: 1;
+  grid-row: 13;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct5 {
+  grid-column: 1;
+  grid-row: 14;
+}
+#product5 {
+  grid-column: 1;
+  grid-row: 15;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct6 {
+
+  grid-column: 1;
+  grid-row: 16;
+}
+#product6 {
+  grid-column: 1;
+  grid-row: 17;
+
+  padding: 20px;;
+}
+
+.productafbeeldingen img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+}
+
+#bannerp {
+  grid-column: 1;
+  grid-row: 18;
+
+  min-height: 120px;
+
+  background-size: contain;
+  background-position: right;
+}
+}
+
+@media (max-width: 600px) {
+.productenpagina {
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  }
+
+#denijntjeclubp {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px; 
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-image: none;
+}
+
+#tussenruimte {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menup {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+
+padding: 15px;
+flex-direction: row;
+flex-wrap: wrap;
+
+gap: 10px;
+}
+
+#menup h3 {
+width: 100%;
+text-align: center;
+}
+
+#producten {
+  grid-column: 1;
+  grid-row: 4;
+
+  padding: 20px;
+}
+
+#tussenruimte2 {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#afbeeldingproduct1 {
+  grid-column: 1;
+  grid-row: 6;
+}
+#product1 {
+  grid-column: 1;
+  grid-row: 7;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct2 {
+  grid-column: 1;
+  grid-row: 8;
+}
+#product2 {
+  grid-column: 1;
+  grid-row: 9;
+
+  padding: 20px;
+}
+
+
+#afbeeldingproduct3 {
+  grid-column: 1;
+  grid-row: 10;
+}
+#product3 {
+  grid-column: 1;
+  grid-row: 11;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct4 {
+  grid-column: 1;
+  grid-row: 12;
+}
+#product4 {
+  grid-column: 1;
+  grid-row: 13;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct5 {
+  grid-column: 1;
+  grid-row: 14;
+}
+#product5 {
+  grid-column: 1;
+  grid-row: 15;
+
+  padding: 20px;
+}
+
+#afbeeldingproduct6 {
+
+  grid-column: 1;
+  grid-row: 16;
+}
+#product6 {
+  grid-column: 1;
+  grid-row: 17;
+
+  padding: 20px;;
+}
+
+.productafbeeldingen img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+}
+
+#bannerp {
+  grid-column: 1;
+  grid-row: 18;
+
+  min-height: 120px;
+
+  background-size: contain;
+  background-position: right;
+
+   background-image: none;
+}
+}
+
+.videospagina {
+display: grid;
+grid-template-columns: 17vw 8vw 50vw 25vw;
+grid-template-rows: 15vh 7vh 25vh 7vh auto 7vh auto 7vh auto 7vh 15vh;
+
+background-color: white;
+}
+
+.videos {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+#denijntjeclubv {
+background-color: rgb(255, 218, 56); 
+grid-column: 1 / 5;
+grid-row: 1 / 2;
+
+text-align: center;
+
+background-image: url(images/nijntjeheader.png);
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: left;
+}
+
+#tussenruimtev {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+#videos {
+  grid-column: 2 / 5;
+  grid-row: 3 / 4; 
+}
+
+#tussenruimte2v {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+
+#video1 {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+
+  background-color: rgb(35, 28, 145);
+}
+
+#tussenruimte3 {
+  grid-column: 1 / 5;
+  grid-row: 6 / 7; 
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+border-bottom: 3px solid black;
+}
+
+#video2 {
+  grid-column: 1 / 5;
+  grid-row: 7 / 8; 
+  
+  background-color: rgb(171, 19, 24);
+}
+
+#tussenruimte4 {
+  grid-column: 1 / 5;
+  grid-row: 8 / 9; 
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+border-bottom: 3px solid black;
+}
+
+#video3 {
+  grid-column: 1 / 5;
+  grid-row: 9 / 10;
+
+  background-color: rgb(240, 210, 62); 
+}
+
+#tussenruimte5 {
+  grid-column: 1 / 5;
+  grid-row: 10 / 11; 
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+border-bottom: 3px solid black;
+}
+
+#bannerv {
+background-color: rgb(58, 112, 28);
+grid-column: 1 / 5;
+grid-row: 11 / 12;
+
+text-align: center;
+
+background-image: url("images/trein.jpg");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+@media (max-width: 600px) {
+  .videospagina {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.videos iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+#denijntjeclubv {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px;
+
+ background-image: none;
+}
+
+#tussenruimtev {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menu {
+  grid-column: 1;
+  grid-row: 3;
+  margin-right: 0;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#menuv h3 {
+width: 100%;
+text-align: center;
+}
+
+#videos {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2v {
+  grid-column: 1;
+  grid-row: 5;
+  
+  height: 20px;
+}
+
+#video1 {
+  grid-column: 1;
+  grid-row: 6;
+
+  padding: 10px;
+}
+
+#tussenruimte3 {
+  grid-column: 1;
+  grid-row: 7; 
+
+  text-align: center;
+  height: auto;
+}
+
+#video2 {
+  grid-column: 1;
+  grid-row: 8; 
+
+  padding: 10px;
+}
+
+#tussenruimte4 {
+  grid-column: 1;
+  grid-row: 9; 
+
+  text-align: center;
+  height: auto;
+}
+
+#video3 {
+  grid-column: 1;
+  grid-row: 10;
+
+  padding: 10px;
+}
+
+#tussenruimte5 {
+  grid-column: 1;
+  grid-row: 11; 
+
+  text-align: center;
+  height: auto;
+}
+
+#bannerv {
+  grid-column: 1;
+  grid-row: 12;
+
+  min-height: 120px;
+
+  background-size: contain;
+  background-position: right;
+
+   background-image: none;
+}
+}
+
+@media (max-width: 1100px) {
+  .videospagina {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.videos iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+#denijntjeclubv {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px;
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tussenruimtev {
+grid-column: 1;
+grid-row: 2;
+height: 20px;
+}
+
+#menu {
+  grid-column: 1;
+  grid-row: 3;
+  margin-right: 0;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#menuv h3 {
+width: 100%;
+text-align: center;
+}
+
+#videos {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2v {
+  grid-column: 1;
+  grid-row: 5;
+  
+  height: 20px;
+}
+
+#video1 {
+  grid-column: 1;
+  grid-row: 6;
+
+  padding: 10px;
+}
+
+#tussenruimte3 {
+  grid-column: 1;
+  grid-row: 7; 
+
+  text-align: center;
+  height: auto;
+}
+
+#video2 {
+  grid-column: 1;
+  grid-row: 8; 
+
+  padding: 10px;
+}
+
+#tussenruimte4 {
+  grid-column: 1;
+  grid-row: 9; 
+
+  text-align: center;
+  height: auto;
+}
+
+#video3 {
+  grid-column: 1;
+  grid-row: 10;
+
+  padding: 10px;
+}
+
+#tussenruimte5 {
+  grid-column: 1;
+  grid-row: 11; 
+
+  text-align: center;
+  height: auto;
+}
+
+#bannerv {
+  grid-column: 1;
+  grid-row: 12;
+
+  min-height: 120px;
+
+  background-size: contain;
+  background-position: right;
+}
+}
+
+.welkenijntjebenjij {
+    display: grid;
+    grid-template-columns: 17vw 18vw 30vw 35vw; 
+    grid-template-rows: 15vh 7vh 25vh 10vh 70vh 7vh 15vh; 
+}
+
+#denijntjeclubw {
+background-color: rgb(255, 218, 56); 
+grid-column: 1 / 5;
+grid-row: 1 / 2;
+
+text-align: center;
+
+background-image: url(images/nijntjeheader.png);
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: left;
+}
+
+#tussenruimtew {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+#menuw {
+  background-color: orange;
+  grid-column: 1 / 2; 
+  grid-row: 3 / 4;
+
+  margin-right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#watisdenijntjeclubw {
+    background-color: rgb(255, 255, 255); 
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+}   
+
+#tussenruimte2w {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+
+#achtergrondw {
+  background-color:rgb(35, 28, 145);
+
+  grid-column: 1 / 5;
+  grid-row: 5 / 7; 
+}
+
+#mogelijkheden {
+width: 100%;
+
+background-image: URL("images/vraag.png");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat; 
+background-position: center;
+
+grid-column: 3 / 4; 
+grid-row: 5 / 6; 
+
+margin-top: 10px;
+}
+
+#invoeren {
+grid-column: 3 / 4;
+grid-row: 6 / 7; 
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+background-color:rgb(35, 28, 145); 
+}
+
+#bannerw {
+background-color: rgb(58, 112, 28);
+grid-column: 1 / 5;
+grid-row: 7 / 8;
+
+text-align: center;
+
+background-image: url("images/trein.jpg");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+@media (max-width: 1100px) {
+  .welkenijntjebenjij {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+#denijntjeclubw {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px;
+
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tussenruimtew {
+  grid-column: 1;
+  grid-row: 2;
+
+  height: 20px;
+}
+
+#menuw {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+#menuw h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#watisdenijntjeclubw {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2w {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#achtergrondw {
+  grid-column: 1;
+  grid-row: 6 / 8; 
+}
+
+#mogelijkheden {
+  grid-column: 1;
+  grid-row: 6;
+
+  height: 200px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#invoeren {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+#bannerw {
+  grid-column: 1;
+  grid-row: 8;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+}
+}
+
+@media (max-width: 600px) {
+  .welkenijntjebenjij {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+
+#denijntjeclubw {
+  grid-column: 1;
+  grid-row: 1;
+
+  min-height: 150px;
+
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: none;
+}
+
+#tussenruimtew {
+  grid-column: 1;
+  grid-row: 2;
+
+  height: 20px;
+}
+
+#menuw {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+#menuw h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#watisdenijntjeclubw {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2w {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+#achtergrondw {
+  grid-column: 1;
+  grid-row: 6 / 8; 
+}
+
+#mogelijkheden {
+  grid-column: 1;
+  grid-row: 6;
+
+  height: 200px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#invoeren {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+#bannerw {
+  grid-column: 1;
+  grid-row: 8;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+
+  background-image: none;
+}
+}
+
+.gifpagina {
+    display: grid;
+    grid-template-columns: 17vw 8vw 50vw 25vw;
+    grid-template-rows: 15vh 7vh 25vh 7vh 50vh 15vh;
+}
+
+#denijntjeclubg {
+  background-color: rgb(255, 218, 56); 
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+
+    text-align: center;
+
+    background-image: url(images/nijntjeheader.png);
+    max-width:100%;
+    height:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#tussenruimteg {
+  background-color: rgb(255, 255, 255);
+
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+#menug {
+  background-color: orange;
+  grid-column: 1 / 2; 
+  grid-row: 3 / 4;
+
+  margin-right: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#gif {
+  grid-column:2 / 5;
+  grid-row: 3 / 4;
+}
+
+#tussenruimte2g {
+ background-color: rgb(255, 255, 255);
+
+  grid-column: 1/ 5;
+  grid-row: 4 / 5;
+}
+
+.tenor-gif-embed {
+    background-color: rgb(255, 255, 255); 
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(35, 28, 145);
+} 
+
+#bannerg {
+background-color: rgb(58, 112, 28);
+grid-column: 1 / 5;
+grid-row: 6 / 7;
+
+text-align: center;
+
+background-image: url("images/trein.jpg");
+max-width:100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+@media (max-width: 1100px) {
+  .gifpagina {
+  /* display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; */
+}
+
+#denijntjeclubg {
+ /* grid-column: 1;
+ grid-row: 1; */
+
+  min-height: 150px;
+
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tussenruimteg {
+ grid-column: 1;
+  grid-row: 2;
+
+  height: 20px;
+}
+
+#menug {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+#menug h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#gif {
+grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2g {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+.tenor-gif-embed {
+grid-column: 1;
+  grid-row: 6;
+}
+
+#bannerg {
+  grid-column: 1;
+  grid-row: 7;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+}
+}
+
+@media (max-width: 600px) {
+  .gifpagina {
+  /* display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; */
+}
+
+#denijntjeclubg {
+ /* grid-column: 1;
+ grid-row: 1; */
+
+  min-height: 150px;
+
+
+  background-size: contain;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: none;
+}
+
+#tussenruimteg {
+ grid-column: 1;
+  grid-row: 2;
+
+  height: 20px;
+}
+
+#menug {
+  grid-column: 1;
+  grid-row: 3;
+
+  margin-right: 0;
+  padding: 15px;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+#menug h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#gif {
+grid-column: 1;
+  grid-row: 4;
+  padding: 10px;
+}
+
+#tussenruimte2g {
+  grid-column: 1;
+  grid-row: 5;
+  height: 20px;
+}
+
+.tenor-gif-embed {
+grid-column: 1;
+  grid-row: 6;
+}
+
+#bannerg {
+  grid-column: 1;
+  grid-row: 7;
+  min-height: 120px;
+  background-size: contain;
+  background-position: right;
+}
+}
